@@ -1,0 +1,123 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+.accordion-button:focus {
+  outline: none;
+}
+.accordion-collapse {
+  display: none;
+}
+.accordion-collapse.show {
+  display: block;
+}
+.video-list::-webkit-scrollbar {
+  width: 12px;
+}
+
+.video-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.video-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.video-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.form-control:focus {
+  border: 0px !important;
+  outline: none;
+}
+
+.headerSection {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background-color: #1e3a8a;
+}
+.headerImage {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.headerImageinside {
+  height: 4rem;
+}
+.mainSection {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .mainSection {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.divWidth {
+  padding: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .divWidth {
+    width: 25%;
+  }
+}
+
+.sidebarSubContainer {
+  margin-top: 1.25rem;
+  border-bottom-width: 1px;
+  border-color: #9ca3af;
+}
+@media (min-width: 768px) {
+  .sidebarSubContainer {
+    margin-top: 1.25rem;
+    border-bottom-width: 1px;
+    border-color: #9ca3af;
+  }
+}
+
+.accordion {
+  display: none; /* hidden */
+}
+@media (min-width: 768px) {
+  .accordion {
+    display: block; /* md:block */
+  }
+}
+.borderWidth {
+  border-width: 0px;
+}
+
+.flexJustifyItems-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordion-button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+.paddingBorder-zero {
+  padding: 0;
+  border-width: 0;
+}
+.paddingOne {
+  padding: 1rem;
+}
