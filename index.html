@@ -47,13 +47,13 @@
                   id="collapseOne"
                   class="accordion-collapse paddingBorder-zero">
                   <div class="accordion-body paddingOne">
-                    <ul class="list-group text-center space-y-5">
+                    <ul class="list-group listGroupContainer">
                       <li
-                        class="list-group-item items-1 active border-0 bg-blue-300 font-bold p-2 cursor-pointer">
+                        class="list-group-item items-1 active listGroupSelectedItem">
                         Translation
                       </li>
                       <li
-                        class="list-group-item items-1 border-0 font-bold p-2 cursor-pointer">
+                        class="list-group-item items-1 listGroupUnSelectedItem">
                         Pronunciation
                       </li>
                     </ul>
@@ -62,19 +62,17 @@
               </div>
             </div>
           </div>
-          <div class="md:mt-5 text-center w-full">
-            <ul
-              class="list-group md:block md:gap-x-0 flex gap-x-3 overflow-x-auto whitespace-nowrap py-4 md:space-y-5 font-bold">
-              <li
-                class="list-group-item border-0 p-2 cursor-pointer md:hidden block">
+          <div class="Sidebar-secondMenu">
+            <ul class="list-group sidebar-SecondMenuContainer">
+              <li class="list-group-item SecondMenuContainer-items">
                 <button
                   id="dropdownDefaultButton"
                   data-dropdown-toggle="dropdown"
-                  class="text-black bg-transparent text-base text-center inline-flex items-center"
+                  class="dropdownDefaultButtonClass"
                   type="button">
                   Alhamdulillah
                   <svg
-                    class="w-2.5 h-2.5 ms-3"
+                    class="svgClass"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -89,50 +87,47 @@
                 </button>
 
                 <!-- Dropdown menu -->
-                <div
-                  id="dropdown"
-                  class="z-10 hidden bg-white divide-y divide-gray-100 w-32 mx-auto">
+                <div id="dropdown" class="dropdown-HiddenClass">
                   <ul
-                    class="py-2 text-sm text-black"
+                    class="hiddenCLassContainer"
                     aria-labelledby="dropdownDefaultButton">
                     <li class="mob-items">
-                      <a href="#" class="block px-4 py-2">Translation</a>
+                      <a href="#" class="hiddenCLassContainer_items"
+                        >Translation</a
+                      >
                     </li>
-                    <li class="mob-items bg-blue-300">
-                      <a href="#" class="block px-4 py-2">Pronunciation</a>
+                    <li class="mob-items backroundBlue">
+                      <a href="#" class="hiddenCLassContainer_items"
+                        >Pronunciation</a
+                      >
                     </li>
                   </ul>
                 </div>
               </li>
-              <li
-                class="list-group-item border-0 md:h-auto h-10 p-2 items-2 cursor-pointer">
+              <li class="list-group-item items-2 groupTwoItems">
                 Further Details
               </li>
-              <li
-                class="list-group-item border-0 md:h-auto h-10 p-2 items-2 cursor-pointer">
+              <li class="list-group-item items-2 groupTwoItems">
                 Quran or hadith
               </li>
-              <li
-                class="list-group-item border-0 md:h-auto h-10 p-2 items-2 cursor-pointer">
+              <li class="list-group-item items-2 groupTwoItems">
                 Example sentences
               </li>
-              <li
-                class="list-group-item border-0 md:h-auto h-10 bg-blue-300 cursor-pointer p-2 items-2">
+              <li class="backroundBlue list-group-item items-2 groupTwoItems">
                 More Islamic Terms
               </li>
-              <li
-                class="list-group-item border-0 md:h-auto h-10 p-2 items-2 cursor-pointer">
+              <li class="list-group-item items-2 groupTwoItems">
                 Word of the day
               </li>
-              <div class="flex justify-center items-center md:h-auto h-10">
-                <button
-                  class="md:mt-4 bg-orange-400 hover:bg-orange-500 text-white py-2 lg:px-8 px-6 rounded-full flex items-center gap-x-2">
-                  <span class="w-5"
-                    ><img class="h-4 w-4" src="./assest/Group 30.png" alt=""
+              <div class="flexJustifyItems-center height2R">
+                <button class="donateButton">
+                  <span class="width1R"
+                    ><img
+                      class="widthHeight1"
+                      src="./assest/Group 30.png"
+                      alt=""
                   /></span>
-                  <span class="font-semibold lg:text-base text-sm"
-                    >Donate Now</span
-                  >
+                  <span class="donateButton_Text">Donate Now</span>
                 </button>
               </div>
             </ul>
@@ -140,22 +135,18 @@
         </div>
 
         <!-- Main Content -->
-        <div class="w-full md:w-3/4 sm:p-12 p-4">
-          <main class="container mt-5">
-            <div
-              class="flex flex-col md:flex-row justify-start items-center mt-5">
-              <div class="pe-4 border-black md:border-r mb-2 md:mb-0">
-                <h1 class="text-4xl lg:text-7xl font-bold">Alhamdulillah</h1>
+        <div class="mainContainer">
+          <main class="container mainContainer_main">
+            <div class="mainContainer_Alignment">
+              <div class="HeaderText_separator">
+                <h1 class="headerText">Alhamdulillah</h1>
               </div>
-              <div
-                class="arabic-text-box flex justify-between items-center ms-0 md:ms-4 mt-3 md:mt-0 mb-2 md:mb-0 py-2 px-5 border-2 border-black rounded-md w-52 h-20">
+              <div class="arabic-text-box arabicText">
                 <div class="arabic-text">
-                  <p id="arabic-text" class="m-0 text-xl font-medium">
-                    ٱلْحَمْدُ لِلّٰهِ
-                  </p>
+                  <p id="arabic-text" class="arabicTextPP">ٱلْحَمْدُ لِلّٰهِ</p>
                 </div>
-                <div class="mt-3 md:mt-0">
-                  <div class="flex justify-center items-center">
+                <div class="copyButtonClass">
+                  <div class="flexJustifyItems-center">
                     <button id="copyText_btn">
                       <img
                         id="copyIcon"
@@ -172,16 +163,16 @@
                         alt="" />
                     </button>
                   </div>
-                  <span id="copyText" class="pt-1 text-xs font-bold">
+                  <span id="copyText" class="copyButtonText">
                     Copy Arabic
                   </span>
                 </div>
               </div>
             </div>
-            <div class="flex items-center border-b border-gray-400 pb-3 mt-4">
-              <p class="pe-3 m-0">[Al-HAM-du-LI-lah]</p>
+            <div class="engPronouncedContainer">
+              <p class="engPronouncedText">[Al-HAM-du-LI-lah]</p>
               <div>
-                <span class="font-bold">
+                <span class="fontWeight8H">
                   <img
                     height="40"
                     width="40"
@@ -190,7 +181,7 @@
                 </span>
               </div>
             </div>
-            <div class="mt-4">
+            <div class="MT1Rem">
               <p>1. All praise is due to Allah</p>
               <p>2. Praise and thanks be to Allah</p>
               <p class="para">
@@ -202,47 +193,39 @@
             </div>
           </main>
 
-          <section class="mt-8">
-            <h2 class="text-2xl font-bold mb-4">Pronunciation video</h2>
-            <div class="vid-container grid grid-cols-1 lg:grid-cols-3 gap-4">
-              <div class="main-video rounded-md p-4 col-span-2 relative">
+          <section class="MT2Rem">
+            <h2 class="pronunciationVideoText">Pronunciation video</h2>
+            <div class="pronunciationVideoController">
+              <div class="mainVideoContaier">
                 <iframe
                   id="main-video"
                   src="https://www.youtube.com/embed/VIDEO_ID"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
-                  class="w-full md:h-[350px] h-[330px] rounded-md"></iframe>
+                  class="mainVideoFrameContainer"></iframe>
                 <!-- <div id="custom-button" class="absolute inset-0 top-[-75px] flex items-center justify-center">
                                 <button id="play-button" class="p-2 rounded-full">
                                     <img class="h-20 w-20 hidden" src="./assest/Group 3.png" alt="">
                                 </button>
                             </div> -->
-                <h3
-                  id="main-title"
-                  class="title text-gray-900 text-lg py-4 font-bold">
+                <h3 id="main-title" class="title mainTitleOfVideo">
                   Video title goes here
                 </h3>
-                <p id="main-date" class="text-xs text-gray-500">
+                <p id="main-date" class="mainDateOfVideo">
                   Publication date goes here
                 </p>
               </div>
               <div>
-                <h2 class="text-xl font-bold mb-1">Terms Islamic</h2>
-                <div
-                  class="video-list rounded-md h-[400px] overflow-y-scroll p-4"
-                  id="video-list">
-                  <!-- Video list will be dynamically generated here -->
-                </div>
+                <h2 class="videosPlaylistTitles">Terms Islamic</h2>
+                <div class="video-list queueVideosFrame" id="video-list"></div>
               </div>
             </div>
           </section>
 
-          <section class="further-detail-section mt-8 mb-16">
-            <div class="container mx-auto">
-              <h2 class="main-heading text-2xl font-bold mb-6">
-                Further Details
-              </h2>
+          <section class="further-detail-section MT2MB4">
+            <div class="container mx-auto islamicCOntaier_MaxWidth">
+              <h2 class="main-heading mainHeadingText">Further Details</h2>
               <div class="para">
                 Whenever we pray salah (daily prayer) we begin with the
                 recitation of “Alhamdulillahi Rabbil ‘aalameen” which is the
@@ -265,11 +248,9 @@
             </div>
           </section>
 
-          <section class="quran-section mt-8 mb-16">
-            <div class="container mx-auto">
-              <h2 class="main-heading text-2xl font-bold mb-6">
-                Quran or hadith
-              </h2>
+          <section class="quran-section MT2MB4">
+            <div class="container mx-auto mainHeadingTextContaier">
+              <h2 class="main-heading mainHeadingTitle">Quran or hadith</h2>
               <div class="para">
                 <span> Hadith on Importance of Remembering Allah: </span>
                 <br /><br />
@@ -309,38 +290,36 @@
             </div>
           </section>
 
-          <section class="example-section py-4 mb-12">
-            <div class="container mx-auto">
-              <div class="main-heading text-2xl font-bold mb-6">
-                Example Sentences
-              </div>
+          <section class="example-section exampleContainer">
+            <div class="container mx-auto mainHeadingTextContaier">
+              <div class="main-heading mainHeadingText">Example Sentences</div>
               <div>
-                <div class="border-s-4 pl-2 border-gray-300">
-                  <span class="font-bold">Example #1:</span>
-                  <div class="example-box mb-6">
+                <div class="QouteSideLine">
+                  <span class="fontWeight8H">Example #1:</span>
+                  <div class="example-box MB1Hrem">
                     can’t believe i didn’t think of her myself, her work is
                     amazing Allahumma barik, so if you live in/near london and
                     want a beautiful tailor made dress check out:
                     @HIDDENFORPRIVACY (used in complimentary fashion).
                   </div>
                 </div>
-                <div class="border-s-4 pl-2 border-gray-300">
-                  <span class="font-bold">Example #2:</span>
-                  <div class="example-box mb-6">
+                <div class="QouteSideLine">
+                  <span class="fontWeight8H">Example #2:</span>
+                  <div class="example-box MB1Hrem">
                     Wow allahumma barik you are glowinggg (again used in a
                     complimentary way).
                   </div>
                 </div>
-                <div class="border-s-4 pl-2 border-gray-300">
-                  <span class="font-bold">Example #3:</span>
-                  <div class="example-box mb-6">
+                <div class="QouteSideLine">
+                  <span class="fontWeight8H">Example #3:</span>
+                  <div class="example-box MB1Hrem">
                     You are beautiful. Allahumma Barik. (wishing the person
                     well, complimentary).
                   </div>
                 </div>
-                <div class="border-s-4 pl-2 border-gray-300">
-                  <span class="font-bold">Example #4:</span>
-                  <div class="example-box mb-6">
+                <div class="QouteSideLine">
+                  <span class="fontWeight8H">Example #4:</span>
+                  <div class="example-box MB1Hrem">
                     Ameen! This is soooooo cute!
                   </div>
                 </div>
@@ -348,93 +327,103 @@
             </div>
           </section>
 
-          <section class="islamic-section bg-blue-100 md:pt-16 md:pb-20 py-8">
-            <div class="container mx-auto">
-              <div class="main-heading text-2xl font-bold mb-6 text-center">
+          <section
+            class="islamic-section backroundLightBlue moreIslamicSectionContainer">
+            <div class="container mx-auto islamicCOntaier_MaxWidth">
+              <div
+                class="main-heading fontSize_lineHeigth fontWeight8H MB1Hrem textAlignmentCenter">
                 More Islamic Terms
               </div>
-              <div
-                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 max-w-2xl mx-auto md:px-0 px-4">
+              <div class="islamicSection_Subtiles MB1Hrem">
                 <div
-                  class="islamic-box bg-white text-center border border-gray-300 rounded-md p-3">
-                  <div class="text text-sm">Nostrud aliquip ad labor</div>
+                  class="islamic-box backgroundWhite textAlignmentCenter subtilesBoundary">
+                  <div class="subTilesTextcontent">
+                    Nostrud aliquip ad labor
+                  </div>
                 </div>
                 <div
-                  class="islamic-box bg-white text-center border border-gray-300 rounded-md p-3">
-                  <div class="text text-sm">Nostrud aliquip ad labor</div>
+                  class="islamic-box backgroundWhite textAlignmentCenter subtilesBoundary">
+                  <div class="subTilesTextcontent">
+                    Nostrud aliquip ad labor
+                  </div>
                 </div>
                 <div
-                  class="islamic-box bg-white text-center border border-gray-300 rounded-md p-3">
-                  <div class="text text-sm">Nostrud aliquip ad labor</div>
+                  class="islamic-box backgroundWhite textAlignmentCenter subtilesBoundary">
+                  <div class="subTilesTextcontent">
+                    Nostrud aliquip ad labor
+                  </div>
                 </div>
                 <div
-                  class="islamic-box bg-white text-center border border-gray-300 rounded-md p-3">
-                  <div class="text text-sm">Nostrud aliquip ad labor</div>
+                  class="islamic-box backgroundWhite textAlignmentCenter subtilesBoundary">
+                  <div class="subTilesTextcontent">
+                    Nostrud aliquip ad labor
+                  </div>
                 </div>
                 <div
-                  class="islamic-box bg-white text-center border border-gray-300 rounded-md p-3">
-                  <div class="text text-sm">Nostrud aliquip ad labor</div>
+                  class="islamic-box backgroundWhite textAlignmentCenter subtilesBoundary">
+                  <div class="subTilesTextcontent">
+                    Nostrud aliquip ad labor
+                  </div>
                 </div>
                 <div
-                  class="islamic-box bg-white text-center border border-gray-300 rounded-md p-3">
-                  <div class="text text-sm">Nostrud aliquip ad labor</div>
+                  class="islamic-box backgroundWhite textAlignmentCenter subtilesBoundary">
+                  <div class="subTilesTextcontent">
+                    Nostrud aliquip ad labor
+                  </div>
                 </div>
                 <div
-                  class="islamic-box bg-white text-center border border-gray-300 rounded-md p-3">
-                  <div class="text text-sm">Nostrud aliquip ad labor</div>
+                  class="islamic-box backgroundWhite textAlignmentCenter subtilesBoundary">
+                  <div class="subTilesTextcontent">
+                    Nostrud aliquip ad labor
+                  </div>
                 </div>
                 <div
-                  class="islamic-box bg-white text-center border border-gray-300 rounded-md p-3">
-                  <div class="text text-sm">Nostrud aliquip ad labor</div>
+                  class="islamic-box backgroundWhite textAlignmentCenter subtilesBoundary">
+                  <div class="subTilesTextcontent">
+                    Nostrud aliquip ad labor
+                  </div>
                 </div>
                 <div
-                  class="islamic-box bg-white text-center border border-gray-300 rounded-md p-3">
-                  <div class="text text-sm">Nostrud aliquip ad labor</div>
+                  class="islamic-box backgroundWhite textAlignmentCenter subtilesBoundary">
+                  <div class="subTilesTextcontent">
+                    Nostrud aliquip ad labor
+                  </div>
                 </div>
               </div>
             </div>
           </section>
 
-          <section class="about-fasiq bg-gray-100 py-10">
-            <div class="container mx-auto">
-              <div class="flex justify-center">
-                <div class="w-full sm:w-10/12 lg:w-7/12 px-4">
-                  <div class="fasiq-box border border-blue-700 rounded-2xl p-8">
-                    <div class="img-box flex items-center mb-4">
-                      <h3 class="world-heading text-xl font-semibold mb-0">
-                        Word of the day
-                      </h3>
+          <section class="about-fasiq fasiqSectionContaier">
+            <div class="container mx-auto islamicCOntaier_MaxWidth">
+              <div class="flexJustifyItems-center">
+                <div class="fasiqSection_InnerContainer">
+                  <div class="fasiq-box fS_InnerContainer_Bordered">
+                    <div class="img-box fS_imageContainer">
+                      <h3 class="world-heading FS_text">Word of the day</h3>
                       <img
                         src="./assest/Volume up 1(6) copy.png"
-                        class="v-img w-9 h-9 ml-3"
+                        class="FS_image"
                         alt="" />
                     </div>
-                    <div class="para mb-6">June 23, 2024</div>
-                    <h2
-                      class="fasiq-text text-6xl font-bold leading-tight mb-0">
-                      Fasiq
-                    </h2>
-                    <div class="f-box flex items-center mb-3">
-                      <h3 class="f-text text-lg font-semibold mb-0">
-                        [Faau-Siqqh]
-                      </h3>
-                      <h3
-                        class="f-text-2 text-blue-400 border-b border-blue-400 ml-2 mb-0">
+                    <div class="para MB1Hrem">June 23, 2024</div>
+                    <h2 class="fasiq-text FS_mainHeading">Fasiq</h2>
+                    <div class="f-box FS_PronounciationsAlignment">
+                      <h3 class="f-text FS_Pronounciations1">[Faau-Siqqh]</h3>
+                      <h3 class="f-text-2 FS_Pronounciations2">
                         Meanings and examples
                       </h3>
                     </div>
-                    <h3 class="para mb-4">
+                    <h3 class="para MB1rem">
                       Start each day with the Word of the Day in your inbox!
                     </h3>
                     <div
-                      class="input-group mb-3 flex items-center border border-gray-300 rounded-lg overflow-hidden bg-white">
-                      <span class="px-4">
+                      class="input-group backgroundWhite FS_imputContainerAlignment">
+                      <span class="headerImage">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="black"
-                          class="bi bi-envelope-fill"
                           viewBox="0 0 16 16">
                           <path
                             d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
@@ -442,12 +431,9 @@
                       </span>
                       <input
                         type="email"
-                        class="form-control w-full py-2 px-3 bg-white md:text-base text-sm"
+                        class="form-control FS_inputFieldForm"
                         placeholder="Enter your email" />
-                      <button
-                        class="btn bg-blue-700 text-white md:px-8 px-2 py-2">
-                        Subscribe
-                      </button>
+                      <button class="btn FS_subscribeButton">Subscribe</button>
                     </div>
                   </div>
                 </div>
@@ -455,97 +441,82 @@
             </div>
           </section>
 
-          <section class="islamic-game bg-blue-50 py-20">
-            <div class="container mx-auto">
-              <div class="flex flex-col items-center mb-8">
-                <h2 class="main-heading text-2xl font-bold mb-4">
-                  Islamic Games
-                </h2>
-                <div class="para text-center mb-8">
+          <section class="islamic-game islamicGameCOntainer">
+            <div class="container mx-auto islamicCOntaier_MaxWidth">
+              <div class="islamicGame_mainHeadingContainer">
+                <h2 class="main-heading IG_mainHeadingText">Islamic Games</h2>
+                <div class="para textAlignmentCenter MB2Rem">
                   Series of fun and educational Islamic games and quizzes. Test
                   your knowledge, play with friends and family, and learn
                   something new.
                 </div>
               </div>
-              <div class="flex flex-wrap justify-center mb-8">
+              <div class="IG_subTilesAlignment MB2Rem">
                 <div
-                  class="card text-center border border-gray-300 rounded-lg mx-2 mb-4 p-4">
+                  class="card textAlignmentCenter IG_subtiles_cardsCOntainer">
                   <img
                     src="./assest/Container 22.png"
-                    class="card-img-top w-full mb-3 rounded-lg"
+                    class="card-img-top MB1_3 IG_cardTopImage"
                     alt="..." />
-                  <h5 class="card-title text-lg font-bold mb-2">Word Search</h5>
-                  <p class="card-text text-sm mb-3">
+                  <h5 class="card-title IG_cardText fontWeight8H">
+                    Word Search
+                  </h5>
+                  <p class="card-text card-subTilesTextcontent MB1_3">
                     Find hidden words related to Islam.
                   </p>
-                  <a
-                    href="#"
-                    class="btn bg-blue-700 text-white py-2 px-6 rounded-full"
-                    >Start</a
-                  >
+                  <a href="#" class="btn IG_startButton">Start</a>
                 </div>
                 <div
-                  class="card text-center border border-gray-300 rounded-lg mx-2 mb-4 p-4">
+                  class="card textAlignmentCenter IG_subtiles_cardsCOntainer">
                   <img
                     src="./assest/question.png"
-                    class="card-img-top w-full mb-3 rounded-lg"
+                    class="card-img-top MB1_3 IG_cardTopImage"
                     alt="..." />
-                  <h5 class="card-title text-lg font-bold mb-2">
-                    99 Names of Allah
-                  </h5>
-                  <p class="card-text text-sm mb-3">Test your knowledge</p>
-                  <a
-                    href="#"
-                    class="btn bg-blue-700 text-white py-2 px-6 rounded-full"
-                    >Start</a
-                  >
+                  <h5 class="card-title IG_cardText">99 Names of Allah</h5>
+                  <p class="card-text card-subTilesTextcontent MB1_3">
+                    Test your knowledge
+                  </p>
+                  <a href="#" class="btn IG_startButton">Start</a>
                 </div>
                 <div
-                  class="card text-center border border-gray-300 rounded-lg mx-2 mb-4 p-4">
+                  class="card textAlignmentCenter IG_subtiles_cardsCOntainer">
                   <img
                     src="./assest/Container 22.png"
-                    class="card-img-top w-full mb-3 rounded-lg"
+                    class="card-img-top MB1_3 IG_cardTopImage"
                     alt="..." />
-                  <h5 class="card-title text-lg font-bold mb-2">Coloring</h5>
-                  <p class="card-text text-sm mb-3">Perfect for kids.</p>
-                  <a
-                    href="#"
-                    class="btn bg-blue-700 text-white py-2 px-6 rounded-full"
-                    >Start</a
-                  >
+                  <h5 class="card-title IG_cardText">Coloring</h5>
+                  <p class="card-text card-subTilesTextcontent MB1_3">
+                    Perfect for kids.
+                  </p>
+                  <a href="#" class="btn IG_startButton">Start</a>
                 </div>
               </div>
-              <div class="flex justify-center mt-6">
-                <a
-                  href="#"
-                  class="btn border border-blue-400 text-blue-400 px-4 py-1 rounded-md hover:border-0 hover:bg-blue-400 hover:text-white"
-                  >View More &gt;</a
-                >
+              <div class="IG_subTilesAlignment MT1Hre">
+                <a href="#" class="btn IG_ViewMoreButton">View More &gt;</a>
               </div>
             </div>
           </section>
 
-          <section class="about-mobile text-center py-20">
-            <div class="container mx-auto">
-              <div class="flex justify-center relative mt-48">
-                <div class="absolute top-[-90%]">
+          <section
+            class="about-mobile textAlignmentCenter paddingtopBottom5Rem">
+            <div class="container mx-auto islamicCOntaier_MaxWidth">
+              <div class="aboutMobileContainer">
+                <div class="AM_PictureAlignment">
                   <img
                     src="./assest/phone app preview 1.png"
-                    class="mobile-img w-full mb-6"
+                    class="mobile-img fullWidth MB1Hrem"
                     alt="" />
                 </div>
-                <div
-                  class="app-box bg-white shadow-2xl rounded-xl px-8 pt-28 pb-8">
-                  <h2 class="app-text text-xl font-semibold mb-4">
+                <div class="app-box backgroundWhite AM_container_shadow">
+                  <h2 class="app-text AM_HeadingText">
                     Download Our Mobile App
                   </h2>
-                  <p class="text text-sm mb-6">
+                  <p class="text subTilesTextcontent MB1Hrem">
                     The My Islam app is now available for download on all
                     Android devices!
                   </p>
-                  <div class="">
-                    <button
-                      class="b bg-blue-700 flex items-center text-white rounded-full py-1 px-6 mx-auto space-x-2 font-semibold">
+                  <div>
+                    <button class="b getAppButton">
                       <span> Get it </span>
                       <span>
                         <img
@@ -562,47 +533,47 @@
       </div>
     </section>
 
-    <footer class="footer bg-blue-900 py-10 text-white md:px-0 px-3">
-      <div class="max-w-7xl mx-auto">
-        <div class="flex flex-wrap">
-          <div class="w-full md:w-1/3 mb-6">
-            <img src="./assest/Image.png" class="h-12 w-48 mb-3" alt="Logo" />
-            <div class="social-icons flex space-x-8">
-              <a href="#" class="text-lg"
+    <footer class="footer footerCOntaier">
+      <div class="footerContainer1Div">
+        <div class="flexWrap">
+          <div class="FooterContainer_imageContainer MB1Hrem">
+            <img
+              src="./assest/Image.png"
+              class="footerCOntaier_Logoimage"
+              alt="Logo" />
+            <div class="social-icons footer_LogosAlignment">
+              <a href="#"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
                   fill="white"
-                  class="bi bi-facebook"
                   viewBox="0 0 16 16">
                   <path
                     d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" /></svg
               ></a>
-              <a href="#" class="text-lg"
+              <a href="#"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
                   fill="white"
-                  class="bi bi-linkedin"
                   viewBox="0 0 16 16">
                   <path
                     d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" /></svg
               ></a>
-              <a href="#" class="text-lg"
-                ><svg
+              <a href="#">
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
                   fill="white"
-                  class="bi bi-youtube"
                   viewBox="0 0 16 16">
                   <path
                     d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" /></svg
               ></a>
-              <a href="#" class="text-lg"
-                ><svg
+              <a href="#">
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
@@ -614,42 +585,40 @@
               ></a>
             </div>
           </div>
-          <div class="w-full md:w-1/3 mb-6">
-            <ul class="list-none">
-              <li class="mb-2">
-                <a href="#" class="text-white">Quick Links</a>
+          <div class="FooterContainer_imageContainer MB1Hrem">
+            <ul class="liststyleTypeNone">
+              <li class="MBH2rem">
+                <a href="#" class="colorWhite">Quick Links</a>
               </li>
-              <li class="mb-2">
-                <a href="#" class="text-white">Online Quran</a>
+              <li class="MBH2rem">
+                <a href="#" class="colorWhite">Online Quran</a>
               </li>
-              <li class="mb-2">
-                <a href="#" class="text-white">Qibla Direction</a>
+              <li class="MBH2rem">
+                <a href="#" class="colorWhite">Qibla Direction</a>
               </li>
-              <li class="mb-2">
-                <a href="#" class="text-white">Islamic Dictionary</a>
+              <li class="MBH2rem">
+                <a href="#" class="colorWhite">Islamic Dictionary</a>
               </li>
-              <li class="mb-2">
-                <a href="#" class="text-white">Hisnul Muslim Du'as</a>
+              <li class="MBH2rem">
+                <a href="#" class="colorWhite">Hisnul Muslim Du'as</a>
               </li>
-              <li class="mb-2">
-                <a href="#" class="text-white">Contact us</a>
+              <li class="MBH2rem">
+                <a href="#" class="colorWhite">Contact us</a>
               </li>
             </ul>
           </div>
-          <div class="w-full md:w-1/3 mb-6">
-            <h2 class="text-xl mb-4">Our Newsletter</h2>
-            <p class="mb-4">
+          <div class="FooterContainer_imageContainer MB1Hrem">
+            <h2 class="footer_NewsLetterHeading">Our Newsletter</h2>
+            <p class="MB1rem">
               120,000+ Muslims have joined our newsletter. Would you like to?
             </p>
-            <div
-              class="input-group mb-3 flex items-center border border-gray-300 rounded-lg overflow-hidden bg-white">
-              <span class="px-4">
+            <div class="input-group footer_emailSubContainer backgroundWhite">
+              <span class="headerImage">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="black"
-                  class="bi bi-envelope-fill"
                   viewBox="0 0 16 16">
                   <path
                     d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
@@ -657,9 +626,9 @@
               </span>
               <input
                 type="email"
-                class="form-control w-full py-2 px-3 bg:bg-gray-100 text-black"
+                class="form-control footer_inputContainer"
                 placeholder="Enter your email" />
-              <button class="btn bg-[#68AAFD] text-white px-4 py-2">
+              <button class="colorWhite btn footer_emaiButton">
                 Subscribe
               </button>
             </div>
@@ -803,11 +772,12 @@
 
           $.each(videos, function (index, video) {
             const $videoElement = $(`
-                        <div class="vid mb-4 p-1 rounded-md cursor-pointer flex items-center">
-                            <div class="flex-shrink-0 mr-4">
-                              <div class="flex items-center space-x-2">
-                                  <div class="active-circle h-5 w-5 rounded-full border border-blue-300 flex justify-center items-center text-blue-300">
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <div class="vid MB1rem vidContainerDiv">
+                            <div class="MarginRight1">
+                              <div class="vidContainer_innerDivAlignment">
+                                  <div class="active-circle vidContainerDiv_ActiveVideo">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                                      viewBox="0 0 16 16">
                                           <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
                                       </svg>
                                   </div>
@@ -815,14 +785,14 @@
                                     video.snippet.thumbnails.default.url
                                   }" alt="${
               video.snippet.title
-            }" class="w-28 h-20 rounded-md">
+            }" class="vidContainerDiv_ActiveVideoThumbnail">
                               </div>
                             </div>
                             <div>
-                                <p class="title text-xs text-gray-700 font-bold">${
+                                <p class="title vidContainerDiv_ActiveVideoThumbnail_title fontWeight8H">${
                                   video.snippet.title
                                 }</p>
-                                <p class="text-xs text-gray-500">${new Date(
+                                <p class="vidContainerDiv_ActiveVideoThumbnail_date">${new Date(
                                   video.snippet.publishedAt,
                                 ).toLocaleDateString()}</p>
                             </div>
