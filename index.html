@@ -199,7 +199,7 @@
               <div class="mainVideoContaier">
                 <iframe
                   id="main-video"
-                  src="https://www.youtube.com/embed/VIDEO_ID"
+                  src="https://www.youtube.com/embed"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
@@ -637,7 +637,7 @@
       </div>
     </footer>
 
-    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src=""></script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -692,15 +692,13 @@
       }
 
       $(document).ready(function () {
-        const apiKey = 'AIzaSyDxw-J_bcLi4BklrgtvyzS6Y6wHajW4Iv8';
-        const channelId = 'UCamjCBi7-doKkui5VHenlNQ';
+        const apiKey = '';
+        const channelId = '';
         const maxResults = 8;
 
         async function fetchYouTubeVideos() {
           try {
-            const response = await fetch(
-              `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${maxResults}`,
-            );
+            const response = await fetch();
             const data = await response.json();
 
             if (response.ok) {
@@ -717,10 +715,7 @@
 
         function displayMainVideo(video) {
           if (video.id.videoId) {
-            $('#main-video').attr(
-              'src',
-              `https://www.youtube.com/embed/${video.id.videoId}?enablejsapi=1&rel=0&autoplay=1`,
-            );
+            $('#main-video').attr();
             $('#main-title').text(video.snippet.title);
             $('#main-date').text(
               new Date(video.snippet.publishedAt).toLocaleDateString(),
@@ -733,10 +728,7 @@
         }
         function displayMainVideo(video) {
           if (video.id.videoId) {
-            $('#main-video').attr(
-              'src',
-              `https://www.youtube.com/embed/${video.id.videoId}?enablejsapi=1&rel=0&autoplay=1`,
-            );
+            $('#main-video').attr();
             $('#main-title').text(video.snippet.title);
             $('#main-date').text(
               new Date(video.snippet.publishedAt).toLocaleDateString() +
