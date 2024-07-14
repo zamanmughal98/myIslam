@@ -39,14 +39,18 @@
   align-items: center;
   width: 100%;
   height: 5rem;
-  background-color: #1e3a8a;
+  background: #1e3a8a;
 }
 .headerImage {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.paddingRight0 {
+  padding-right: 0;
+}
 .headerImageinside {
   height: 4rem;
+  padding-left: 2rem;
 }
 .mainSection {
   padding-top: 0.5rem;
@@ -63,12 +67,14 @@
   flex-wrap: wrap;
 }
 .divWidth {
-  padding: 1rem;
+  position: fixed;
+  background: white;
+  z-index: 1;
   width: 100%;
+  height: fit-content;
+  box-shadow: 0px 0px 5px -1px rgb(164 160 160 / 83%);
 }
-.fullWidth {
-  width: 100;
-}
+
 @media (min-width: 768px) {
   .divWidth {
     width: 25%;
@@ -89,11 +95,11 @@
 }
 
 .accordion {
-  display: none; /* hidden */
+  display: none;
 }
 @media (min-width: 768px) {
   .accordion {
-    display: block; /* md:block */
+    display: block;
   }
 }
 .borderWidth {
@@ -132,8 +138,12 @@
   padding: 0.5rem;
   border-width: 0;
   font-weight: 700;
-  background-color: #93c5fd;
   cursor: pointer;
+  color: #171a1f;
+}
+.ListItemsActiveCell {
+  background: #68aafd73;
+  padding: 1rem;
 }
 .listGroupUnSelectedItem {
   padding: 0.5rem;
@@ -190,7 +200,7 @@
   line-height: 1.5rem;
   text-align: center;
   color: #000000;
-  background-color: transparent;
+  background: transparent;
 }
 
 .svgClass {
@@ -203,7 +213,7 @@
   border-top-width: 1px;
   border-color: #f3f4f6;
   width: 8rem;
-  background-color: #ffffff;
+  background: #ffffff;
 }
 
 .hiddenCLassContainer {
@@ -217,11 +227,9 @@
   display: block;
   padding: 0.5rem 1rem;
 }
-.backroundBlue {
-  background-color: #93c5fd;
-}
+
 .backroundLightBlue {
-  background-color: #dbeafe;
+  background: #dbeafe;
 }
 .backgroundWhite {
   background: white;
@@ -234,6 +242,7 @@
   border-width: 0;
   height: 2.5rem;
   cursor: pointer;
+  color: #171a1f;
 }
 
 @media (min-width: 768px) {
@@ -254,7 +263,7 @@
 }
 
 .donateButton {
-  background-color: #f38e1c;
+  background: #f38e1c;
   color: #fff;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -264,12 +273,7 @@
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
-}
-
-@media (min-width: 768px) {
-  .donateButton {
-    margin-top: 1rem;
-  }
+  margin-top: 5rem;
 }
 
 @media (min-width: 1024px) {
@@ -279,9 +283,12 @@
   }
 }
 .donateButton:hover {
-  background-color: #fb923c;
+  background: #004c9b;
 }
 
+.donateButton:active {
+  background: #d16008;
+}
 .widthHeight1 {
   width: 1rem;
   height: 1rem;
@@ -303,17 +310,21 @@
 .mainContainer {
   width: 100%;
   padding: 1rem;
+  margin-left: 25%;
+  padding-right: 0;
 }
 
 @media (min-width: 640px) {
   .mainContainer {
     padding: 3rem;
+    padding-right: 0;
   }
 }
 
 @media (min-width: 768px) {
   .mainContainer {
     width: 75%;
+    padding-right: 0;
   }
 }
 .mainContainer_main {
@@ -422,12 +433,12 @@
 }
 
 .copyButtonClass {
-  margin-top: 0.75rem; /* Equivalent to mt-3 in Tailwind (assuming 1rem = 16px) */
+  margin-top: 0.75rem;
 }
 
 @media (min-width: 768px) {
   .copyButtonClass {
-    margin-top: 0; /* Equivalent to md:mt-0 in Tailwind */
+    margin-top: 0;
   }
 }
 .displayNone {
@@ -455,6 +466,9 @@
 }
 .fontWeight8H {
   font-weight: 700;
+}
+.pointerCursor {
+  cursor: pointer;
 }
 .MT1Rem {
   margin-top: 1rem;
@@ -542,8 +556,8 @@
 .mainHeadingTextContaier {
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%; /* Ensures the container does not exceed the viewport width */
-  padding-left: 1rem; /* Optional padding for left and right sides */
+  max-width: 100%;
+  padding-left: 1rem;
   padding-right: 1rem;
 }
 
@@ -562,7 +576,7 @@
 .QouteSideLine {
   border-width: 0 0 0 4px;
   padding-left: 0.5rem;
-  border-color: #d1d5db;
+  border-color: #ebebeb;
   border-style: solid;
 }
 
@@ -573,12 +587,12 @@
 .moreIslamicSectionContainer {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
   .moreIslamicSectionContainer {
-    padding-top: 4rem;
-    padding-bottom: 5rem;
+    padding: 4rem 2rem 5rem 2rem;
   }
 }
 
@@ -629,10 +643,20 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+.boldFontWeight {
+  font-weight: bold;
+}
 .fasiqSectionContaier {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  background-color: #f3f4f6;
+  background: #f3f4f6;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .fasiqSectionContaier {
+    padding: 2rem 0;
+  }
 }
 
 .fasiqSection_InnerContainer {
@@ -706,7 +730,7 @@
   margin-bottom: 1rem;
 }
 .MBH2rem {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 .FS_imputContainerAlignment {
   margin-bottom: 0.75rem;
@@ -725,7 +749,7 @@
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  background-color: #ffffff;
+  background: #ffffff;
   font-size: 1rem;
   line-height: 1.25rem;
 }
@@ -743,7 +767,7 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   color: #ffffff;
-  background-color: #1d4ed8;
+  background: #004c9b;
 }
 
 @media (min-width: 768px) {
@@ -756,14 +780,20 @@
 .islamicGameCOntainer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #eff6ff;
+  background: #eff6ff;
+}
+
+@media (min-width: 768px) {
+  .islamicGameCOntainer {
+    padding: 4rem 2rem 5rem 2rem;
+  }
 }
 
 .islamicGame_mainHeadingContainer {
   display: flex;
-  margin-bottom: 2rem;
+  margin: 0 auto;
   flex-direction: column;
-  align-items: center;
+  width: 85%;
 }
 .IG_mainHeadingText {
   margin-bottom: 1rem;
@@ -772,28 +802,33 @@
   font-weight: 700;
 }
 
+.IG_mainSubHeadingText {
+  width: 80%;
+  align-self: start;
+}
+
 .MB2Rem {
   margin-bottom: 2rem;
 }
 
 .IG_subTilesAlignment {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
 }
 .IG_subtiles_cardsCOntainer {
-  padding: 1rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  margin-bottom: 1rem;
+  background: #fff;
+  margin: 0 0.5rem 1rem 0.5rem;
   border-radius: 0.5rem;
-  border-width: 1px;
-  border-color: #d1d5db;
+  border: 1px solid #d1d5db;
+  display: flex;
+  flex-direction: column;
+  max-height: 20rem;
 }
 
 .IG_cardTopImage {
-  border-radius: 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
   width: 100%;
+  max-height: 11.5rem;
 }
 .IG_cardText {
   margin-bottom: 0.5rem;
@@ -804,17 +839,25 @@
   margin-bottom: 0.75rem;
 }
 .IG_startButton {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  width: 50%;
   border-radius: 9999px;
   color: #ffffff;
-  background-color: #1d4ed8;
+  background: #68aafd;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  margin-top: auto;
 }
 .MT1Hre {
   margin-top: 1.5rem;
 }
+.justifyContentEnd {
+  display: flex;
+  margin: 0 auto;
+  width: 88%;
+  justify-content: flex-end;
+}
+
 .IG_ViewMoreButton {
   border-style: solid;
   padding-top: 0.25rem;
@@ -823,14 +866,12 @@
   padding-right: 1rem;
   border-radius: 0.375rem;
   border-width: 1px;
-  border-color: #60a5fa;
-  color: #60a5fa;
+  border-color: #68aafd;
+  color: #68aafd;
 }
-
-.custom-class:hover {
-  border-width: 0; /* Equivalent to hover:border-0 in Tailwind */
-  background-color: #60a5fa; /* Equivalent to hover:bg-blue-400 in Tailwind */
-  color: #ffffff; /* Equivalent to hover:text-white in Tailwind */
+.IG_ViewMoreButton:hover {
+  color: #ffffff;
+  background: #68aafd;
 }
 
 .paddingtopBottom5Rem {
@@ -854,7 +895,7 @@
   padding-bottom: 2rem;
   padding-top: 7rem;
   border-radius: 0.75rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 1px rgb(164 160 160 / 83%);
 }
 .AM_HeadingText {
   margin-bottom: 1rem;
@@ -864,27 +905,28 @@
 }
 .getAppButton {
   display: flex;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 0.5rem 0.75rem;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   border-radius: 9999px;
   font-weight: 600;
   color: #ffffff;
-  background-color: #1d4ed8;
+  background: #004c9b;
   gap: 0.5rem;
+}
+
+.getAppButton:hover {
+  border-width: 0;
+  background: #60a5fa;
 }
 
 .footerCOntaier {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
   color: #ffffff;
-  background-color: #1e3a8a;
+  background: #1e3a8a;
 }
 
 @media (min-width: 768px) {
@@ -906,17 +948,19 @@
 
 @media (min-width: 768px) {
   .FooterContainer_imageContainer {
-    width: 33.333333%;
+    width: 30%;
+    padding: 3%;
   }
 }
 
 .footerCOntaier_Logoimage {
   width: 12rem;
   height: 3rem;
+  margin: 2rem 0;
 }
 .footer_LogosAlignment {
-  display: flex; /* Equivalent to flex in Tailwind */
-  gap: 2rem; /* Equivalent to space-x-8 in Tailwind (assuming 1rem = 16px) */
+  display: flex;
+  gap: 2rem;
 }
 .footer_NewsLetterHeading {
   margin-bottom: 1rem;
@@ -961,7 +1005,7 @@
 .vidContainer_innerDivAlignment {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Equivalent to space-x-2 in Tailwind */
+  gap: 0.5rem;
 }
 .vidContainerDiv_ActiveVideo {
   display: flex;
