@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Islamic Dictionary</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/styles.css" />
@@ -831,10 +832,48 @@
               console.error('Error copying text: ', error);
             });
         });
-        $('#dropdownDefaultButton').click(function () {
-          $('#dropdown').toggleClass('hidden');
-        });
       });
+
+      // Checking the screen size and navBar sub menu
+      const width = window.innerWidth;
+      const Other_Content = document.querySelector('.mainContainer');
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const dropdownButton = document.getElementById('dropdownDefaultButton');
+        const dropdownMenu = document.getElementById('dropdown');
+
+        dropdownButton.addEventListener('click', function () {
+          if (dropdownMenu.classList.contains('hidden')) {
+            dropdownMenu.classList.remove('hidden');
+            Other_Content.classList.add('MT_forMainContentContainer');
+            Other_Content.classList.remove('MT_2_forMainContentContainer');
+          } else {
+            dropdownMenu.classList.add('hidden');
+            Other_Content.classList.add('MT_2_forMainContentContainer');
+            Other_Content.classList.remove('MT_forMainContentContainer');
+          }
+        });
+
+        dropdownMenu.classList.add('hidden');
+      });
+
+      // check the scroll position and adjust the nav bar position
+      function logScreenSizeAndScrollPosition() {
+        const scrollTop = window.scrollY;
+        const DivWidth = document.querySelector('.divWidth');
+
+        if (scrollTop > 20 && width < 768) {
+          DivWidth.classList.add('sideBarTotheTop');
+          Other_Content.classList.add('MT_2_forMainContentContainer');
+        } else {
+          DivWidth.classList.remove('sideBarTotheTop');
+          Other_Content.classList.remove('MT_2_forMainContentContainer');
+        }
+      }
+
+      window.addEventListener('load', logScreenSizeAndScrollPosition);
+      window.addEventListener('resize', logScreenSizeAndScrollPosition);
+      window.addEventListener('scroll', logScreenSizeAndScrollPosition);
     </script>
   </body>
 </html>

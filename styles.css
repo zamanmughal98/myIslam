@@ -74,6 +74,9 @@
   height: fit-content;
   box-shadow: 0px 0px 5px -1px rgb(164 160 160 / 83%);
 }
+.sideBarTotheTop {
+  translate: 0 -7rem;
+}
 
 @media (min-width: 768px) {
   .divWidth {
@@ -204,11 +207,11 @@
 }
 
 .svgClass {
+  margin-left: 1rem;
   width: 0.625rem;
   height: 0.625rem;
 }
 .dropdown-HiddenClass {
-  display: none;
   z-index: 10;
   border-top-width: 1px;
   border-color: #f3f4f6;
@@ -222,10 +225,10 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #000000;
+  list-style-type: none;
 }
 .hiddenCLassContainer_items {
   display: block;
-  padding: 0.5rem 1rem;
 }
 
 .backroundLightBlue {
@@ -243,6 +246,7 @@
   height: 2.5rem;
   cursor: pointer;
   color: #171a1f;
+  list-style-type: none;
 }
 
 @media (min-width: 768px) {
@@ -274,6 +278,11 @@
   align-items: center;
   column-gap: 0.5rem;
   margin-top: 5rem;
+}
+@media (max-width: 768px) {
+  .donateButton {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -312,6 +321,12 @@
   padding: 1rem;
   margin-left: 25%;
   padding-right: 0;
+}
+@media (max-width: 768px) {
+  .mainContainer {
+    margin-left: 0;
+    margin-top: 5rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -469,6 +484,12 @@
 }
 .pointerCursor {
   cursor: pointer;
+}
+.MT_forMainContentContainer {
+  margin-top: 10rem;
+}
+.MT_2_forMainContentContainer {
+  margin-top: 5rem;
 }
 .MT1Rem {
   margin-top: 1rem;
@@ -929,10 +950,10 @@
   background: #1e3a8a;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .footerCOntaier {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
