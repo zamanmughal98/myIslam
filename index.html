@@ -835,7 +835,6 @@
       });
 
       // Checking the screen size and navBar sub menu
-      const width = window.innerWidth;
       const Other_Content = document.querySelector('.mainContainer');
 
       document.addEventListener('DOMContentLoaded', function () {
@@ -859,6 +858,7 @@
 
       // check the scroll position and adjust the nav bar position
       function logScreenSizeAndScrollPosition() {
+        const width = window.innerWidth;
         const scrollTop = window.scrollY;
         const DivWidth = document.querySelector('.divWidth');
 
