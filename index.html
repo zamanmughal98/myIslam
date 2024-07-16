@@ -5,7 +5,6 @@
     <meta name="viewport" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Islamic Dictionary</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
@@ -30,7 +29,7 @@
                     data-target="#collapseOne">
                     Alhamdulillah
                     <svg
-                      class="w-2.5 h-2.5 ms-3"
+                      class="svg_AccordionIcon"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -73,7 +72,8 @@
                   type="button">
                   Alhamdulillah
                   <svg
-                    class="svgClass"
+                    class="svg_AccordionIcon"
+                    id="svg_AccordionIcon"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -88,19 +88,16 @@
                 </button>
 
                 <!-- Dropdown menu -->
-                <div id="dropdown" class="dropdown-HiddenClass">
+                <div id="dropdown" class="dropdown-HiddenClass NoneToDisplay">
                   <ul
                     class="hiddenCLassContainer"
                     aria-labelledby="dropdownDefaultButton">
-                    <li class="mob-items">
-                      <a href="#" class="hiddenCLassContainer_items"
-                        >Translation</a
-                      >
+                    <li
+                      class="mob-items hiddenCLassContainer_items ListItemsActiveCell">
+                      Translation
                     </li>
-                    <li class="mob-items ListItemsActiveCell">
-                      <a href="#" class="hiddenCLassContainer_items"
-                        >Pronunciation</a
-                      >
+                    <li class="mob-items hiddenCLassContainer_items">
+                      Pronunciation
                     </li>
                   </ul>
                 </div>
@@ -149,10 +146,12 @@
                 </div>
                 <div class="copyButtonClass">
                   <div class="flexJustifyItems-center">
-                    <button id="copyText_btn">
+                    <button
+                      id="copyText_btn"
+                      class="backgroundWhite pointerCursor">
                       <img
                         id="copyIcon"
-                        height="20"
+                        height="25"
                         width="20"
                         src="./assest/copy.png"
                         alt="" />
@@ -160,7 +159,7 @@
                         id="checkIcon"
                         height="40"
                         width="40"
-                        class="hidden"
+                        class="displayNone"
                         src="./assest/check.png"
                         alt="" />
                     </button>
@@ -208,11 +207,6 @@
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                   class="mainVideoFrameContainer"></iframe>
-                <!-- <div id="custom-button" class="absolute inset-0 top-[-75px] flex items-center justify-center">
-                                <button id="play-button" class="p-2 rounded-full">
-                                    <img class="h-20 w-20 hidden" src="./assest/Group 3.png" alt="">
-                                </button>
-                            </div> -->
                 <h3 id="main-title" class="title mainTitleOfVideo">
                   Video title goes here
                 </h3>
@@ -328,7 +322,32 @@
                 <div class="QouteSideLine">
                   <span class="fontWeight8H">Example #4:</span>
                   <div class="example-box MB1Hrem">
-                    Ameen! This is soooooo cute!
+                    Ameen! This is soooooo cute! Allahumma Barik (image of mom
+                    with infant child, an example of wishing the person well).
+                  </div>
+                </div>
+                <div class="QouteSideLine">
+                  <span class="fontWeight8H">Example #5:</span>
+                  <div class="example-box MB1Hrem">
+                    Allahumma barik to all the mamas out there. we can literally
+                    achieve anything because of their sacrifices and their duas.
+                    may allah protect them all. ameen. (Sending blessings).
+                  </div>
+                </div>
+                <div class="QouteSideLine">
+                  <span class="fontWeight8H">Example #6:</span>
+                  <div class="example-box MB1Hrem">
+                    Allahumma Barik laha to my sis , she’s been blessed with a
+                    beautiful girl (sending blessings using the proper Arabic
+                    version for women).
+                  </div>
+                </div>
+                <div class="QouteSideLine">
+                  <span class="fontWeight8H">Example #7:</span>
+                  <div class="example-box MB1Hrem">
+                    Just listen to my little brother, the levels! Allahumma
+                    barik lahu. (sending blessings to his brother using proper
+                    Arabic version for men).
                   </div>
                 </div>
               </div>
@@ -417,13 +436,13 @@
                     <h2 class="fasiq-text FS_mainHeading">Fasiq</h2>
                     <div class="f-box FS_PronounciationsAlignment">
                       <h3 class="f-text FS_Pronounciations1">[Faau-Siqqh]</h3>
-                      <h3 class="f-text-2 FS_Pronounciations2">
+                      <h3 class="f-text-2 FS_Pronounciations2 pointerCursor">
                         Meanings and examples
                       </h3>
                     </div>
-                    <h3 class="para MB1rem">
+                    <p class="para MB1rem">
                       Start each day with the Word of the Day in your inbox!
-                    </h3>
+                    </p>
                     <div
                       class="input-group backgroundWhite FS_imputContainerAlignment">
                       <span class="headerImage paddingRight0">
@@ -433,7 +452,9 @@
                         type="email"
                         class="form-control FS_inputFieldForm"
                         placeholder="Input your email" />
-                      <button class="FS_subscribeButton">Subscribe</button>
+                      <button class="FS_subscribeButton pointerCursor">
+                        Subscribe
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -453,7 +474,7 @@
               </div>
               <div class="IG_subTilesAlignment MB2Rem">
                 <div
-                  class="card textAlignmentCenter IG_subtiles_cardsCOntainer">
+                  class="card textAlignmentCenter IG_subtiles_cardsCOntainer pointerCursor">
                   <img
                     src="./assest/Container 22.png"
                     class="card-img-top MB1_3 IG_cardTopImage"
@@ -465,10 +486,10 @@
                     class="card-text card-subTilesTextcontent MB1_3 headerImage">
                     Find hidden words related to Islam.
                   </p>
-                  <button class="IG_startButton">Start</button>
+                  <button class="IG_startButton pointerCursor">Start</button>
                 </div>
                 <div
-                  class="card textAlignmentCenter IG_subtiles_cardsCOntainer">
+                  class="card textAlignmentCenter IG_subtiles_cardsCOntainer pointerCursor">
                   <img
                     src="./assest/question.png"
                     class="card-img-top MB1_3 IG_cardTopImage"
@@ -480,10 +501,10 @@
                     class="card-text card-subTilesTextcontent MB1_3 headerImage">
                     Test your knowledge
                   </p>
-                  <button class="IG_startButton">Start</button>
+                  <button class="IG_startButton pointerCursor">Start</button>
                 </div>
                 <div
-                  class="card textAlignmentCenter IG_subtiles_cardsCOntainer">
+                  class="card textAlignmentCenter IG_subtiles_cardsCOntainer pointerCursor">
                   <img
                     src="./assest/coloring custom.png"
                     class="card-img-top MB1_3 IG_cardTopImage"
@@ -495,11 +516,11 @@
                     class="card-text card-subTilesTextcontent MB1_3 headerImage">
                     Perfect for kids.
                   </p>
-                  <button class="IG_startButton">Start</button>
+                  <button class="IG_startButton pointerCursor">Start</button>
                 </div>
               </div>
               <section class="IG_subTilesAlignment MT1Hre justifyContentEnd">
-                <a href="#" class="IG_ViewMoreButton">view more &gt;</a>
+                <button class="IG_ViewMoreButton">view more &gt;</button>
               </section>
             </div>
           </section>
@@ -518,7 +539,7 @@
                   <h2 class="app-text AM_HeadingText">
                     Download Our Mobile App
                   </h2>
-                  <p class="text subTilesTextcontent MB1Hrem boldFontWeight">
+                  <p class="text subTilesTextcontent MB1Hrem">
                     The My Islam app is now available for download on all
                     Android devices!
                   </p>
@@ -627,7 +648,7 @@
                 type="email"
                 class="form-control footer_inputContainer"
                 placeholder="Input your email" />
-              <button class="colorWhite btn footer_emaiButton">
+              <button class="colorWhite btn footer_emaiButton pointerCursor">
                 Subscribe
               </button>
             </div>
@@ -817,6 +838,7 @@
           var target = $(this).data('target');
           $('.accordion-collapse').not($(target)).removeClass('show');
           $(target).toggleClass('show');
+          $(this).find('.svg_AccordionIcon').toggleClass('flipUpsideDown');
         });
         $('#copyText_btn').on('click', function () {
           var textToCopy = $('#arabic-text').text();
@@ -824,13 +846,18 @@
           navigator.clipboard
             .writeText(textToCopy)
             .then(function () {
-              $('#copyIcon').addClass('hidden');
-              $('#checkIcon').removeClass('hidden');
+              $('#copyIcon').addClass('displayNone');
+              $('#checkIcon').removeClass('displayNone');
               $('#copyText').text('Copied');
+
+              // Reset the icons and text after 2 seconds (2000 milliseconds)
+              setTimeout(function () {
+                $('#copyIcon').removeClass('displayNone');
+                $('#checkIcon').addClass('displayNone');
+                $('#copyText').text('Copy Arabic');
+              }, 2000); // Adjust the delay as needed
             })
-            .catch(function (error) {
-              console.error('Error copying text: ', error);
-            });
+            .catch(function (error) {});
         });
       });
 
@@ -840,20 +867,21 @@
       document.addEventListener('DOMContentLoaded', function () {
         const dropdownButton = document.getElementById('dropdownDefaultButton');
         const dropdownMenu = document.getElementById('dropdown');
+        const svgAccordionIcon = document.getElementById('svg_AccordionIcon');
 
         dropdownButton.addEventListener('click', function () {
-          if (dropdownMenu.classList.contains('hidden')) {
-            dropdownMenu.classList.remove('hidden');
+          if (dropdownMenu.classList.contains('NoneToDisplay')) {
+            dropdownMenu.classList.remove('NoneToDisplay');
             Other_Content.classList.add('MT_forMainContentContainer');
             Other_Content.classList.remove('MT_2_forMainContentContainer');
+            svgAccordionIcon.classList.add('flipUpsideDown');
           } else {
-            dropdownMenu.classList.add('hidden');
+            dropdownMenu.classList.add('NoneToDisplay');
             Other_Content.classList.add('MT_2_forMainContentContainer');
             Other_Content.classList.remove('MT_forMainContentContainer');
+            svgAccordionIcon.classList.remove('flipUpsideDown');
           }
         });
-
-        dropdownMenu.classList.add('hidden');
       });
 
       // check the scroll position and adjust the nav bar position
@@ -865,8 +893,10 @@
         if (scrollTop > 20 && width < 768) {
           DivWidth.classList.add('sideBarTotheTop');
           Other_Content.classList.add('MT_2_forMainContentContainer');
+          Other_Content.classList.remove('MT_forMainContentContainer');
         } else {
           DivWidth.classList.remove('sideBarTotheTop');
+          Other_Content.classList.remove('MT_forMainContentContainer');
           Other_Content.classList.remove('MT_2_forMainContentContainer');
         }
       }

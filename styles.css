@@ -2,6 +2,17 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  margin: 0;
+}
+input {
+  border: 0;
+}
+button {
+  border: 0;
+  background: white;
+}
+.flipUpsideDown {
+  rotate: 180deg;
 }
 .accordion-button:focus {
   outline: none;
@@ -75,7 +86,7 @@
   box-shadow: 0px 0px 5px -1px rgb(164 160 160 / 83%);
 }
 .sideBarTotheTop {
-  translate: 0 -7rem;
+  top: 0;
 }
 
 @media (min-width: 768px) {
@@ -106,7 +117,8 @@
   }
 }
 .borderWidth {
-  border-width: 0px;
+  border-bottom: 1px solid #bcc1ca;
+  padding-bottom: 1rem;
 }
 
 .flexJustifyItems-center {
@@ -115,15 +127,13 @@
   align-items: center;
 }
 .accordion-button {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 1rem 1.5rem;
   width: 100%;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 700;
   text-align: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  background: white;
 }
 .paddingBorder-zero {
   padding: 0;
@@ -132,9 +142,17 @@
 .paddingOne {
   padding: 1rem;
 }
+.svg_AccordionIcon {
+  width: 0.625rem;
+  height: 0.625rem;
+  margin-left: 1rem;
+}
+
 .listGroupContainer {
   margin-top: 1.25rem;
   text-align: center;
+  list-style-type: none;
+  padding: 0;
 }
 
 .listGroupSelectedItem {
@@ -146,7 +164,6 @@
 }
 .ListItemsActiveCell {
   background: #68aafd73;
-  padding: 1rem;
 }
 .listGroupUnSelectedItem {
   padding: 0.5rem;
@@ -170,8 +187,7 @@
   column-gap: 0.75rem;
   overflow-x: auto;
   white-space: nowrap;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   font-weight: bold;
 }
 
@@ -199,18 +215,13 @@
 .dropdownDefaultButtonClass {
   display: inline-flex;
   align-items: center;
-  font-size: 1rem;
-  line-height: 1.5rem;
   text-align: center;
-  color: #000000;
-  background: transparent;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  background: white;
 }
 
-.svgClass {
-  margin-left: 1rem;
-  width: 0.625rem;
-  height: 0.625rem;
-}
 .dropdown-HiddenClass {
   z-index: 10;
   border-top-width: 1px;
@@ -218,16 +229,18 @@
   width: 8rem;
   background: #ffffff;
 }
-
+.NoneToDisplay {
+  display: none;
+}
 .hiddenCLassContainer {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #000000;
   list-style-type: none;
 }
 .hiddenCLassContainer_items {
+  padding: 0.5rem 0;
   display: block;
 }
 
@@ -344,42 +357,17 @@
 }
 .mainContainer_main {
   margin-top: 1.25rem;
-  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-@media (min-width: 640px) {
-  .mainContainer_main {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .mainContainer_main {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .mainContainer_main {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .mainContainer_main {
-    max-width: 1280px;
-  }
 }
 .mainContainer_Alignment {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 1.25rem;
+  margin-top: 5rem;
 }
 
 @media (min-width: 768px) {
@@ -396,7 +384,7 @@
 
 @media (min-width: 768px) {
   .HeaderText_separator {
-    border-right-width: 1px;
+    border-right: 1px solid;
     margin-bottom: 0;
   }
 }
@@ -421,14 +409,12 @@
   margin-inline-start: 0;
   margin-top: 0.75rem;
   margin-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding: 0 1.25rem;
   border-width: 2px;
   border-color: black;
+  border-style: solid;
   border-radius: 0.375rem;
-  width: 13rem;
+  width: 10rem;
   height: 5rem;
 }
 
@@ -701,7 +687,9 @@
   padding: 2rem;
   border-radius: 1rem;
   border-width: 1px;
-  border-color: #1d4ed8;
+  border-color: #004c9b;
+  border-style: solid;
+  box-shadow: 0px 0px 5px 1px rgb(164 160 160 / 83%);
 }
 
 .fS_imageContainer {
@@ -724,16 +712,23 @@
 }
 .FS_mainHeading {
   font-weight: 750;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   font-size: 3.75rem;
   line-height: 1.25;
 }
 
 .FS_PronounciationsAlignment {
   display: flex;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .FS_PronounciationsAlignment {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
 .FS_Pronounciations1 {
   margin-bottom: 0;
   font-size: 1.125rem;
@@ -743,9 +738,15 @@
 .FS_Pronounciations2 {
   margin-bottom: 0;
   margin-left: 0.5rem;
-  border-bottom-width: 1px;
-  border-color: #60a5fa;
-  color: #60a5fa;
+  border-bottom: 1px solid #60a5fa;
+  color: #379ae6;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .FS_Pronounciations2 {
+    margin: 0;
+  }
 }
 .MB1rem {
   margin-bottom: 1rem;
@@ -783,8 +784,9 @@
 }
 
 .FS_subscribeButton {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  margin: auto;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   color: #ffffff;
@@ -836,6 +838,14 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .IG_subTilesAlignment {
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+  }
+}
+
 .IG_subtiles_cardsCOntainer {
   background: #fff;
   margin: 0 0.5rem 1rem 0.5rem;
@@ -864,10 +874,9 @@
   border-radius: 9999px;
   color: #ffffff;
   background: #68aafd;
-  display: flex;
-  justify-content: center;
   margin: 2rem auto;
   margin-top: auto;
+  height: 2rem;
 }
 .MT1Hre {
   margin-top: 1.5rem;
@@ -889,6 +898,14 @@
   border-width: 1px;
   border-color: #68aafd;
   color: #68aafd;
+}
+
+@media (max-width: 768px) {
+  .IG_ViewMoreButton {
+    margin: auto;
+    white-space: nowrap;
+    width: fit-content;
+  }
 }
 .IG_ViewMoreButton:hover {
   color: #ffffff;
@@ -937,8 +954,8 @@
   gap: 0.5rem;
 }
 
+.FS_subscribeButton:hover,
 .getAppButton:hover {
-  border-width: 0;
   background: #60a5fa;
 }
 
